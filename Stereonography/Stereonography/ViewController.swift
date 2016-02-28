@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     @IBAction func Submit(sender: UIButton) {
         
-        print("inside")
+        
         let linkstring = InsertLink.text
  
         let url = NSURL(fileURLWithPath: linkstring!)
@@ -27,9 +27,18 @@ class ViewController: UIViewController {
         
         if (url.host == amazonurl) {
             performSegueWithIdentifier("answerquestion", sender: self)
+            
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setURL(url, forKey: "secureURL")
+            
         } else {
             
-            performSegueWithIdentifier("picturenow", sender: self)
+        performSegueWithIdentifier("picturenow", sender: self)
+            
+            let defaults = NSUserDefaults.standardUserDefaults()
+            defaults.setObject(linkstring, forKey: "messageData")
+
+            
             
         }
             
