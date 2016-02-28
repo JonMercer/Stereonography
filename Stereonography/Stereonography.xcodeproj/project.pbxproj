@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C822D6621C82BCC700E6B898 /* IMG_1086.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C822D6611C82BCC700E6B898 /* IMG_1086.JPG */; };
+		C8E5EC011C82BC20006913C7 /* StegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E5EC001C82BC20006913C7 /* StegViewController.m */; };
 		C8E9B2781C82851000C798BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B2771C82851000C798BF /* AppDelegate.swift */; };
 		C8E9B27A1C82851000C798BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B2791C82851000C798BF /* ViewController.swift */; };
 		C8E9B27D1C82851000C798BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E9B27B1C82851000C798BF /* Main.storyboard */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C822D6611C82BCC700E6B898 /* IMG_1086.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1086.JPG; sourceTree = "<group>"; };
+		C8E5EBFE1C82BC20006913C7 /* Stereonography-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stereonography-Bridging-Header.h"; sourceTree = "<group>"; };
+		C8E5EBFF1C82BC20006913C7 /* StegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StegViewController.h; sourceTree = "<group>"; };
+		C8E5EC001C82BC20006913C7 /* StegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StegViewController.m; sourceTree = "<group>"; };
 		C8E9B2741C82851000C798BF /* Stereonography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stereonography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E9B2771C82851000C798BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8E9B2791C82851000C798BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8E5EBFD1C82BC06006913C7 /* StegModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8E5EBFF1C82BC20006913C7 /* StegViewController.h */,
+				C8E5EC001C82BC20006913C7 /* StegViewController.m */,
+				C8E5EBFE1C82BC20006913C7 /* Stereonography-Bridging-Header.h */,
+			);
+			name = StegModel;
+			sourceTree = "<group>";
+		};
 		C8E9B26B1C82851000C798BF = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +113,13 @@
 		C8E9B2761C82851000C798BF /* Stereonography */ = {
 			isa = PBXGroup;
 			children = (
+				C8E5EBFD1C82BC06006913C7 /* StegModel */,
 				C8E9B2771C82851000C798BF /* AppDelegate.swift */,
 				C8E9B2791C82851000C798BF /* ViewController.swift */,
 				C8E9B27B1C82851000C798BF /* Main.storyboard */,
 				C8E9B27E1C82851000C798BF /* Assets.xcassets */,
 				C8E9B2801C82851000C798BF /* LaunchScreen.storyboard */,
+				C822D6611C82BCC700E6B898 /* IMG_1086.JPG */,
 				C8E9B2831C82851000C798BF /* Info.plist */,
 			);
 			path = Stereonography;
@@ -231,6 +249,7 @@
 			files = (
 				C8E9B2821C82851000C798BF /* LaunchScreen.storyboard in Resources */,
 				C8E9B27F1C82851000C798BF /* Assets.xcassets in Resources */,
+				C822D6621C82BCC700E6B898 /* IMG_1086.JPG in Resources */,
 				C8E9B27D1C82851000C798BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E5EC011C82BC20006913C7 /* StegViewController.m in Sources */,
 				C8E9B27A1C82851000C798BF /* ViewController.swift in Sources */,
 				C8E9B2781C82851000C798BF /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Stereonography/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PurpleOctopus.Stereonography;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stereonography/Stereonography-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -410,10 +433,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Stereonography/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PurpleOctopus.Stereonography;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Stereonography/Stereonography-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +509,7 @@
 				C8E9B29E1C82851100C798BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8E9B29F1C82851100C798BF /* Build configuration list for PBXNativeTarget "StereonographyTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +518,7 @@
 				C8E9B2A11C82851100C798BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8E9B2A21C82851100C798BF /* Build configuration list for PBXNativeTarget "StereonographyUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +527,7 @@
 				C8E9B2A41C82851100C798BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

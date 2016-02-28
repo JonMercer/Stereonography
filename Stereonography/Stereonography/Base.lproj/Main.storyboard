@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sending/Recieving-->
         <scene sceneID="Eam-pa-oZp">
             <objects>
-                <viewController storyboardIdentifier="Sending/Recieving" id="SRD-XH-cr2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sending/Recieving" title="Sending/Recieving" id="SRD-XH-cr2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CIs-6g-EEe"/>
                         <viewControllerLayoutGuide type="bottom" id="czz-5d-idx"/>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-433" y="-1026"/>
         </scene>
-        <!--View Controller-->
+        <!--Loading-->
         <scene sceneID="9i4-2G-B6z">
             <objects>
-                <viewController storyboardIdentifier="Loading" id="6jL-Bh-sL9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Loading" title="Loading" id="6jL-Bh-sL9" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O5N-vZ-ipx"/>
                         <viewControllerLayoutGuide type="bottom" id="CUg-wK-dRN"/>
@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="-425" y="-327"/>
         </scene>
-        <!--View Controller-->
+        <!--Message-->
         <scene sceneID="lJQ-Em-mn3">
             <objects>
-                <viewController storyboardIdentifier="Message" id="tau-FU-8eZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Message" title="Message" id="tau-FU-8eZ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W3Y-Lp-dMv"/>
                         <viewControllerLayoutGuide type="bottom" id="MGj-37-Ieb"/>
@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="257" y="-1015"/>
         </scene>
-        <!--View Controller-->
+        <!--Take Photo-->
         <scene sceneID="A2T-jR-yNf">
             <objects>
-                <viewController storyboardIdentifier="Take Photo" id="bWU-Pe-Hbj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Take Photo" title="Take Photo" id="bWU-Pe-Hbj" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yx4-w0-xtM"/>
                         <viewControllerLayoutGuide type="bottom" id="ehM-tQ-Z50"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="899" y="-1023"/>
         </scene>
-        <!--View Controller-->
+        <!--Q/A-->
         <scene sceneID="5Sm-wS-gQ8">
             <objects>
-                <viewController storyboardIdentifier="Q/A" id="n39-kx-vta" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q/A" title="Q/A" id="n39-kx-vta" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4sC-2h-lwk"/>
                         <viewControllerLayoutGuide type="bottom" id="Xcx-4Z-LaN"/>
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="1555" y="-1023"/>
         </scene>
-        <!--View Controller-->
+        <!--Insert Link-->
         <scene sceneID="wzF-YB-CZP">
             <objects>
-                <viewController storyboardIdentifier="Insert Link" id="Fru-tH-5Dc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Insert Link" title="Insert Link" id="Fru-tH-5Dc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nLq-wB-Ilw"/>
                         <viewControllerLayoutGuide type="bottom" id="nS9-gu-N9C"/>
@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="-425" y="641"/>
         </scene>
-        <!--View Controller-->
+        <!--Input Q/A-->
         <scene sceneID="YAf-gJ-p3p">
             <objects>
-                <viewController storyboardIdentifier="Input Q/A" id="kOc-bX-giN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Input Q/A" title="Input Q/A" id="kOc-bX-giN" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fSH-yR-Z2I"/>
                         <viewControllerLayoutGuide type="bottom" id="qUa-p9-4vh"/>
@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="299" y="641"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Link-->
         <scene sceneID="asq-Bn-44l">
             <objects>
-                <viewController storyboardIdentifier="Your Link" id="ysG-aj-fsr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Your Link" title="Your Link" id="ysG-aj-fsr" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZRP-bg-go7"/>
                         <viewControllerLayoutGuide type="bottom" id="DjU-RO-r8y"/>
@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="245" y="-327"/>
         </scene>
-        <!--View Controller-->
+        <!--New User-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="New User" id="BYZ-38-t0r" customClass="ViewController" customModule="Stereonography" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="New User" title="New User" id="BYZ-38-t0r" customClass="ViewController" customModule="Stereonography" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -166,10 +166,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Instructions-->
         <scene sceneID="S1q-lM-mKQ">
             <objects>
-                <viewController storyboardIdentifier="Instructions" id="pxc-wA-n4s" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Instructions" title="Instructions" id="pxc-wA-n4s" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GoK-wr-kQN"/>
                         <viewControllerLayoutGuide type="bottom" id="jFL-8q-Hhz"/>
@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="-454" y="1445"/>
         </scene>
-        <!--View Controller-->
+        <!--Jon's test-->
         <scene sceneID="E8s-2Y-PFa">
             <objects>
-                <viewController storyboardIdentifier="Jon's test" id="ID0-9i-YHk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Jon's test" title="Jon's test" id="ID0-9i-YHk" customClass="StegViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Ra-ri-1df"/>
                         <viewControllerLayoutGuide type="bottom" id="uAt-6O-Suu"/>
@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="-454" y="2270"/>
         </scene>
-        <!--View Controller-->
+        <!--Your Message-->
         <scene sceneID="xhn-fp-2w2">
             <objects>
-                <viewController storyboardIdentifier="Your Message" id="ZJl-Af-DCu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Your Message" title="Your Message" id="ZJl-Af-DCu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DE3-e3-qlv"/>
                         <viewControllerLayoutGuide type="bottom" id="Y3p-Ch-MIW"/>
