@@ -8,6 +8,7 @@
 
 #import "StegModel.h"
 
+
 @implementation StegModel
 
 
@@ -23,6 +24,10 @@
 
 -(NSString*) attemptToDecryptImageMessageWithAnswerKey: (NSString*)answer{
   return @"THis is The message";
+}
+
+-(UIImage*) jpegFromBitmap: (NSString*)imageKey {
+  return [UIImage imageNamed:@"IMG_1086"];
 }
 
 

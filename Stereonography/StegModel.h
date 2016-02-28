@@ -9,6 +9,7 @@
 //#import <Cocoa/Cocoa.h>
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface StegModel : NSObject
 
@@ -16,5 +17,6 @@
 
 -(NSString*) decryptImageQuestion: (NSString*)imageKey;
 -(NSString*) attemptToDecryptImageMessageWithAnswerKey: (NSString*)answer;
+-(UIImage*) jpegFromBitmap: (NSString*)imageKey;
 
 @end
