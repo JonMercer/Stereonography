@@ -134,7 +134,7 @@
         <!--Send/Receive-->
         <scene sceneID="xhn-fp-2w2">
             <objects>
-                <viewController title="Send/Receive" id="ZJl-Af-DCu" sceneMemberID="viewController">
+                <viewController title="Send/Receive" id="ZJl-Af-DCu" customClass="ViewController" customModule="Stereonography" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DE3-e3-qlv"/>
                         <viewControllerLayoutGuide type="bottom" id="Y3p-Ch-MIW"/>
@@ -143,21 +143,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVC-ze-FII">
-                                <rect key="frame" x="276" y="415" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQm-J7-f4O">
-                                <rect key="frame" x="95" y="241" width="411" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Link or Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-OC-Jgd">
                                 <rect key="frame" x="213" y="79" width="174" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVC-ze-FII">
+                                <rect key="frame" x="276" y="415" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="Submit:" destination="ZJl-Af-DCu" eventType="touchUpInside" id="NrK-2U-LIS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQm-J7-f4O">
+                                <rect key="frame" x="95" y="241" width="411" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -169,6 +172,9 @@
                             <constraint firstItem="nJg-OC-Jgd" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" id="ekJ-b1-Mbe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="InsertLink" destination="wQm-J7-f4O" id="zgA-zb-a8f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9j-Ys-L6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
