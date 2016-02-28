@@ -24,6 +24,8 @@ class ViewController: UIViewController {
       let amazonurl = NSURL(fileURLWithPath: "www.amazon.ca")
         
         if (url.host == amazonurl){
+            performSegueWithIdentifier("answerquestion", sender: self)
+            performSegueWithIdentifier("picturenow", sender: self)
             
             
         }
