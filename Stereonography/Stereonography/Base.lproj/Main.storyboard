@@ -178,7 +178,34 @@
                     <view key="view" contentMode="scaleToFill" id="qa3-dX-jox">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Are you sending or receiving?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOU-8t-6BS">
+                                <rect key="frame" x="197" y="105" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDR-eQ-C0h">
+                                <rect key="frame" x="427" y="219" width="89" height="75"/>
+                                <state key="normal" title="Receiving"/>
+                                <connections>
+                                    <segue destination="pxc-wA-n4s" kind="show" id="Vbh-kh-huL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esQ-Wt-ejc">
+                                <rect key="frame" x="125" y="219" width="88" height="75"/>
+                                <state key="normal" title="Sending"/>
+                                <connections>
+                                    <segue destination="SRD-XH-cr2" kind="show" id="vf9-Dp-k7b"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uDR-eQ-C0h" firstAttribute="leading" secondItem="esQ-Wt-ejc" secondAttribute="trailing" constant="20" id="Bv7-cU-adu"/>
+                            <constraint firstItem="YOU-8t-6BS" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" id="PID-NJ-oyy"/>
+                            <constraint firstItem="esQ-Wt-ejc" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" constant="-30" id="yjS-At-8qQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9j-Ys-L6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
