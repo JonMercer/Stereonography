@@ -26,7 +26,7 @@
         <!--TakePicture-->
         <scene sceneID="lJQ-Em-mn3">
             <objects>
-                <viewController title="TakePicture" id="tau-FU-8eZ" sceneMemberID="viewController">
+                <viewController title="TakePicture" id="tau-FU-8eZ" customClass="TakePicture" customModule="Stereonography" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W3Y-Lp-dMv"/>
                         <viewControllerLayoutGuide type="bottom" id="MGj-37-Ieb"/>
@@ -34,8 +34,25 @@
                     <view key="view" contentMode="scaleToFill" id="ffY-yy-tdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcu-nA-c0A">
+                                <rect key="frame" x="90" y="59" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC3-Ez-cw8">
+                                <rect key="frame" x="172" y="296" width="77" height="30"/>
+                                <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="presentImagePicker:" destination="tau-FU-8eZ" eventType="touchUpInside" id="dKQ-j6-prQ"/>
+                                    <action selector="takePhoto:" destination="tau-FU-8eZ" eventType="touchUpInside" id="1Ea-nU-KCZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="lcu-nA-c0A" id="mhQ-Bv-VUn"/>
+                        <outlet property="imageViewer" destination="lcu-nA-c0A" id="Szm-Ef-ZPr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXb-kh-WIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
