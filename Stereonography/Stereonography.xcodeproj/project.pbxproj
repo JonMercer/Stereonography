@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		9464A22C1C832B9300E94C6B /* TakePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9464A22B1C832B9300E94C6B /* TakePicture.swift */; };
 		948A21EF1C83258A0023CA3D /* InsertQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A21EE1C83258A0023CA3D /* InsertQA.swift */; };
-		C8E89A041C82D22600DEC80D /* StegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E89A031C82D22600DEC80D /* StegViewController.m */; };
+		C857682A1C83470500C65827 /* UIImage+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = C85768261C83470500C65827 /* UIImage+Test2.m */; };
+		C857682B1C83470500C65827 /* StegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85768281C83470500C65827 /* StegViewController.m */; };
 		C8E89A061C82D25900DEC80D /* IMG_1086.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8E89A051C82D25900DEC80D /* IMG_1086.jpg */; };
 		C8E9B2781C82851000C798BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B2771C82851000C798BF /* AppDelegate.swift */; };
 		C8E9B27A1C82851000C798BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B2791C82851000C798BF /* ViewController.swift */; };
@@ -40,9 +41,11 @@
 /* Begin PBXFileReference section */
 		9464A22B1C832B9300E94C6B /* TakePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePicture.swift; sourceTree = "<group>"; };
 		948A21EE1C83258A0023CA3D /* InsertQA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertQA.swift; sourceTree = "<group>"; };
+		C85768261C83470500C65827 /* UIImage+Test2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Test2.m"; sourceTree = "<group>"; };
+		C85768271C83470500C65827 /* UIImage+Test2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Test2.h"; sourceTree = "<group>"; };
+		C85768281C83470500C65827 /* StegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StegViewController.m; sourceTree = "<group>"; };
+		C85768291C83470500C65827 /* StegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StegViewController.h; sourceTree = "<group>"; };
 		C8E89A011C82D22500DEC80D /* Stereonography-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stereonography-Bridging-Header.h"; sourceTree = "<group>"; };
-		C8E89A021C82D22600DEC80D /* StegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StegViewController.h; sourceTree = "<group>"; };
-		C8E89A031C82D22600DEC80D /* StegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StegViewController.m; sourceTree = "<group>"; };
 		C8E89A051C82D25900DEC80D /* IMG_1086.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1086.jpg; sourceTree = "<group>"; };
 		C8E9B2741C82851000C798BF /* Stereonography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stereonography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8E9B2771C82851000C798BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +90,10 @@
 		C8E89A001C82D1CB00DEC80D /* StegModel */ = {
 			isa = PBXGroup;
 			children = (
-				C8E89A021C82D22600DEC80D /* StegViewController.h */,
-				C8E89A031C82D22600DEC80D /* StegViewController.m */,
+				C85768261C83470500C65827 /* UIImage+Test2.m */,
+				C85768271C83470500C65827 /* UIImage+Test2.h */,
+				C85768281C83470500C65827 /* StegViewController.m */,
+				C85768291C83470500C65827 /* StegViewController.h */,
 				C8E89A011C82D22500DEC80D /* Stereonography-Bridging-Header.h */,
 			);
 			name = StegModel;
@@ -281,9 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C857682A1C83470500C65827 /* UIImage+Test2.m in Sources */,
 				948A21EF1C83258A0023CA3D /* InsertQA.swift in Sources */,
-				C8E89A041C82D22600DEC80D /* StegViewController.m in Sources */,
 				C8E9B27A1C82851000C798BF /* ViewController.swift in Sources */,
+				C857682B1C83470500C65827 /* StegViewController.m in Sources */,
 				9464A22C1C832B9300E94C6B /* TakePicture.swift in Sources */,
 				C8E9B2781C82851000C798BF /* AppDelegate.swift in Sources */,
 			);
