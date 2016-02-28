@@ -92,15 +92,21 @@
   /*
    *
    */
+  UIImage *jpegImage = [UIImage imageNamed:@"IMG_1086.JPG"];
   
-  UIImage *jpegImage = [UIImage imageNamed:@"IMG_1086.jpg"];
   NSData *bitmapFileData = [jpegImage bitmapDataWithFileHeader];
   
-  UIImage *bmpImage = [[UIImage alloc ] initWithData:bitmapFileData];
-  UIImageWriteToSavedPhotosAlbum(bmpImage, nil, nil, nil);
+  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+  NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"Image666.BMP"];
   
-  [[NSUserDefaults standardUserDefaults] setObject:bitmapFileData forKey:@"encryptedFile"];
-  [[NSUserDefaults standardUserDefaults] synchronize];
+  // Save image.
+  [bitmapFileData writeToFile:filePath atomically:YES];
+  
+  NSData *loadedBMP = [[NSData alloc]initWithContentsOfFile:filePath];
+  
+  
+  UIImage *bmpImage = [[UIImage alloc ] initWithData:loadedBMP];
+  UIImageWriteToSavedPhotosAlbum(bmpImage, nil, nil, nil);
 //  bitmapFileData.bytes;
   
   // get the CGImageref
