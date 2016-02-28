@@ -190,6 +190,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dinosaur_logo" translatesAutoresizingMaskIntoConstraints="NO" id="eay-vl-BTv">
+                                <rect key="frame" x="225" y="115" width="150" height="80"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -212,4 +215,7 @@
             <point key="canvasLocation" x="1007" y="322"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dinosaur_logo" width="198" height="108"/>
+    </resources>
 </document>
