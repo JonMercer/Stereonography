@@ -14,21 +14,30 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var InsertLink: UITextField!
     
+    
+    
     @IBAction func Submit(sender: UIButton) {
         
-        
+        print("inside")
         let linkstring = InsertLink.text
  
         let url = NSURL(fileURLWithPath: linkstring!)
         
       let amazonurl = NSURL(fileURLWithPath: "www.amazon.ca")
         
-        if (url.host == amazonurl){
+        if (url.host == amazonurl) {
             performSegueWithIdentifier("answerquestion", sender: self)
+        } else {
+            
             performSegueWithIdentifier("picturenow", sender: self)
             
-            
         }
+            
+           
+            
+        
+        
+        
         
         
   
