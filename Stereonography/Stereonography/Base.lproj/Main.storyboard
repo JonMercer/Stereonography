@@ -35,26 +35,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcu-nA-c0A">
-                                <rect key="frame" x="90" y="59" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcu-nA-c0A">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nC3-Ez-cw8">
-                                <rect key="frame" x="172" y="296" width="77" height="30"/>
-                                <state key="normal" title="Take Photo"/>
-                                <connections>
-                                    <action selector="TakePicture:" destination="tau-FU-8eZ" eventType="touchUpInside" id="oSe-mk-J08"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="ImageView" destination="lcu-nA-c0A" id="hN8-pa-OZU"/>
+                        <segue destination="bWU-Pe-Hbj" kind="show" identifier="makeqa" id="2qO-yc-8K8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXb-kh-WIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="213" y="-1354"/>
+            <point key="canvasLocation" x="229" y="-1354"/>
         </scene>
         <!--InsertQuestionANswer-->
         <scene sceneID="A2T-jR-yNf">
@@ -201,10 +195,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVC-ze-FII">
-                                <rect key="frame" x="203" y="413" width="122" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Submit">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVC-ze-FII">
+                                <rect key="frame" x="249" y="425" width="103" height="103"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="5jR-4X-fBQ"/>
+                                    <constraint firstAttribute="height" constant="103" id="c4d-rf-dl6"/>
+                                </constraints>
+                                <state key="normal" image="submit_arrow">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -224,6 +221,7 @@
                             <constraint firstItem="wQm-J7-f4O" firstAttribute="centerY" secondItem="qa3-dX-jox" secondAttribute="centerY" id="e99-Wt-2wD"/>
                             <constraint firstItem="5k3-3H-75O" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" id="gTm-jD-qAA"/>
                             <constraint firstItem="5k3-3H-75O" firstAttribute="height" secondItem="qa3-dX-jox" secondAttribute="height" id="qqX-6g-6Rh"/>
+                            <constraint firstItem="VVC-ze-FII" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" id="ye3-Dg-ubf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -239,5 +237,6 @@
     </scenes>
     <resources>
         <image name="bg_home" width="750" height="1334"/>
+        <image name="submit_arrow" width="157" height="157"/>
     </resources>
 </document>
