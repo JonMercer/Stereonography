@@ -13,10 +13,11 @@
 
 @interface StegModel : NSObject
 
--(BOOL) encryptWithQuestion:(NSString*)question  andAnswer:(NSString*)answer andMessage:(NSString*)message andImageKey:(NSString *)imageKey;
+-(NSString*) encryptWithQuestion:(NSString*)question  andAnswer:(NSString*)answer andMessage:(NSString*)message andImageKey:(NSString *)imageKey;
 
 -(NSString*) decryptImageQuestion: (NSString*)imageKey;
--(NSString*) attemptToDecryptImageMessageWithAnswerKey: (NSString*)answer;
+-(NSString*) attemptToDecryptImageMessageWithAnswerKey: (NSString*)answer andImgKey:(NSString*)imageKey;
 -(UIImage*) jpegFromBitmap: (NSString*)imageKey;
+
 
 @end
