@@ -25,11 +25,15 @@ class ViewController: UIViewController {
         
       let amazonurl = NSURL(fileURLWithPath: "www.amazon.ca")
         
-        if (url.host == amazonurl) {
+        
+        
+        if (url == amazonurl) {
             performSegueWithIdentifier("answerquestion", sender: self)
             
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setURL(url, forKey: "secureURL")
+            
+
             
         } else {
             
