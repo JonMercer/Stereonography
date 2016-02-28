@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8E9B2781C82851000C798BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B2771C82851000C798BF /* AppDelegate.swift */; };
+		C8E9B27A1C82851000C798BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B2791C82851000C798BF /* ViewController.swift */; };
+		C8E9B27D1C82851000C798BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E9B27B1C82851000C798BF /* Main.storyboard */; };
+		C8E9B27F1C82851000C798BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E9B27E1C82851000C798BF /* Assets.xcassets */; };
+		C8E9B2821C82851000C798BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8E9B2801C82851000C798BF /* LaunchScreen.storyboard */; };
+		C8E9B28D1C82851100C798BF /* StereonographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B28C1C82851100C798BF /* StereonographyTests.swift */; };
+		C8E9B2981C82851100C798BF /* StereonographyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E9B2971C82851100C798BF /* StereonographyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8E9B2891C82851100C798BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8E9B26C1C82851000C798BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8E9B2731C82851000C798BF;
+			remoteInfo = Stereonography;
+		};
+		C8E9B2941C82851100C798BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8E9B26C1C82851000C798BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8E9B2731C82851000C798BF;
+			remoteInfo = Stereonography;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8E9B2741C82851000C798BF /* Stereonography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stereonography.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E9B2771C82851000C798BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C8E9B2791C82851000C798BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8E9B27C1C82851000C798BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C8E9B27E1C82851000C798BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8E9B2811C82851000C798BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C8E9B2831C82851000C798BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E9B2881C82851100C798BF /* StereonographyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StereonographyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E9B28C1C82851100C798BF /* StereonographyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StereonographyTests.swift; sourceTree = "<group>"; };
+		C8E9B28E1C82851100C798BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E9B2931C82851100C798BF /* StereonographyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StereonographyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E9B2971C82851100C798BF /* StereonographyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StereonographyUITests.swift; sourceTree = "<group>"; };
+		C8E9B2991C82851100C798BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8E9B2711C82851000C798BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E9B2851C82851100C798BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E9B2901C82851100C798BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8E9B26B1C82851000C798BF = {
+			isa = PBXGroup;
+			children = (
+				C8E9B2761C82851000C798BF /* Stereonography */,
+				C8E9B28B1C82851100C798BF /* StereonographyTests */,
+				C8E9B2961C82851100C798BF /* StereonographyUITests */,
+				C8E9B2751C82851000C798BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8E9B2751C82851000C798BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8E9B2741C82851000C798BF /* Stereonography.app */,
+				C8E9B2881C82851100C798BF /* StereonographyTests.xctest */,
+				C8E9B2931C82851100C798BF /* StereonographyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8E9B2761C82851000C798BF /* Stereonography */ = {
+			isa = PBXGroup;
+			children = (
+				C8E9B2771C82851000C798BF /* AppDelegate.swift */,
+				C8E9B2791C82851000C798BF /* ViewController.swift */,
+				C8E9B27B1C82851000C798BF /* Main.storyboard */,
+				C8E9B27E1C82851000C798BF /* Assets.xcassets */,
+				C8E9B2801C82851000C798BF /* LaunchScreen.storyboard */,
+				C8E9B2831C82851000C798BF /* Info.plist */,
+			);
+			path = Stereonography;
+			sourceTree = "<group>";
+		};
+		C8E9B28B1C82851100C798BF /* StereonographyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8E9B28C1C82851100C798BF /* StereonographyTests.swift */,
+				C8E9B28E1C82851100C798BF /* Info.plist */,
+			);
+			path = StereonographyTests;
+			sourceTree = "<group>";
+		};
+		C8E9B2961C82851100C798BF /* StereonographyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8E9B2971C82851100C798BF /* StereonographyUITests.swift */,
+				C8E9B2991C82851100C798BF /* Info.plist */,
+			);
+			path = StereonographyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8E9B2731C82851000C798BF /* Stereonography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E9B29C1C82851100C798BF /* Build configuration list for PBXNativeTarget "Stereonography" */;
+			buildPhases = (
+				C8E9B2701C82851000C798BF /* Sources */,
+				C8E9B2711C82851000C798BF /* Frameworks */,
+				C8E9B2721C82851000C798BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stereonography;
+			productName = Stereonography;
+			productReference = C8E9B2741C82851000C798BF /* Stereonography.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8E9B2871C82851100C798BF /* StereonographyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E9B29F1C82851100C798BF /* Build configuration list for PBXNativeTarget "StereonographyTests" */;
+			buildPhases = (
+				C8E9B2841C82851100C798BF /* Sources */,
+				C8E9B2851C82851100C798BF /* Frameworks */,
+				C8E9B2861C82851100C798BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8E9B28A1C82851100C798BF /* PBXTargetDependency */,
+			);
+			name = StereonographyTests;
+			productName = StereonographyTests;
+			productReference = C8E9B2881C82851100C798BF /* StereonographyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8E9B2921C82851100C798BF /* StereonographyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E9B2A21C82851100C798BF /* Build configuration list for PBXNativeTarget "StereonographyUITests" */;
+			buildPhases = (
+				C8E9B28F1C82851100C798BF /* Sources */,
+				C8E9B2901C82851100C798BF /* Frameworks */,
+				C8E9B2911C82851100C798BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8E9B2951C82851100C798BF /* PBXTargetDependency */,
+			);
+			name = StereonographyUITests;
+			productName = StereonographyUITests;
+			productReference = C8E9B2931C82851100C798BF /* StereonographyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8E9B26C1C82851000C798BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Purple Octopus";
+				TargetAttributes = {
+					C8E9B2731C82851000C798BF = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					C8E9B2871C82851100C798BF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C8E9B2731C82851000C798BF;
+					};
+					C8E9B2921C82851100C798BF = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = C8E9B2731C82851000C798BF;
+					};
+				};
+			};
+			buildConfigurationList = C8E9B26F1C82851000C798BF /* Build configuration list for PBXProject "Stereonography" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8E9B26B1C82851000C798BF;
+			productRefGroup = C8E9B2751C82851000C798BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8E9B2731C82851000C798BF /* Stereonography */,
+				C8E9B2871C82851100C798BF /* StereonographyTests */,
+				C8E9B2921C82851100C798BF /* StereonographyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8E9B2721C82851000C798BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E9B2821C82851000C798BF /* LaunchScreen.storyboard in Resources */,
+				C8E9B27F1C82851000C798BF /* Assets.xcassets in Resources */,
+				C8E9B27D1C82851000C798BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E9B2861C82851100C798BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E9B2911C82851100C798BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8E9B2701C82851000C798BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E9B27A1C82851000C798BF /* ViewController.swift in Sources */,
+				C8E9B2781C82851000C798BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E9B2841C82851100C798BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E9B28D1C82851100C798BF /* StereonographyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E9B28F1C82851100C798BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E9B2981C82851100C798BF /* StereonographyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8E9B28A1C82851100C798BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8E9B2731C82851000C798BF /* Stereonography */;
+			targetProxy = C8E9B2891C82851100C798BF /* PBXContainerItemProxy */;
+		};
+		C8E9B2951C82851100C798BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8E9B2731C82851000C798BF /* Stereonography */;
+			targetProxy = C8E9B2941C82851100C798BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C8E9B27B1C82851000C798BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8E9B27C1C82851000C798BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C8E9B2801C82851000C798BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C8E9B2811C82851000C798BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C8E9B29A1C82851100C798BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8E9B29B1C82851100C798BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8E9B29D1C82851100C798BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stereonography/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PurpleOctopus.Stereonography;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8E9B29E1C82851100C798BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stereonography/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PurpleOctopus.Stereonography;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C8E9B2A01C82851100C798BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StereonographyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PurpleOctopus.StereonographyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stereonography.app/Stereonography";
+			};
+			name = Debug;
+		};
+		C8E9B2A11C82851100C798BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StereonographyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PurpleOctopus.StereonographyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stereonography.app/Stereonography";
+			};
+			name = Release;
+		};
+		C8E9B2A31C82851100C798BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StereonographyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PurpleOctopus.StereonographyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Stereonography;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C8E9B2A41C82851100C798BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StereonographyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PurpleOctopus.StereonographyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Stereonography;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8E9B26F1C82851000C798BF /* Build configuration list for PBXProject "Stereonography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E9B29A1C82851100C798BF /* Debug */,
+				C8E9B29B1C82851100C798BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8E9B29C1C82851100C798BF /* Build configuration list for PBXNativeTarget "Stereonography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E9B29D1C82851100C798BF /* Debug */,
+				C8E9B29E1C82851100C798BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C8E9B29F1C82851100C798BF /* Build configuration list for PBXNativeTarget "StereonographyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E9B2A01C82851100C798BF /* Debug */,
+				C8E9B2A11C82851100C798BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C8E9B2A21C82851100C798BF /* Build configuration list for PBXNativeTarget "StereonographyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E9B2A31C82851100C798BF /* Debug */,
+				C8E9B2A41C82851100C798BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8E9B26C1C82851000C798BF /* Project object */;
+}
