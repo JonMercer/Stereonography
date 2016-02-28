@@ -162,7 +162,7 @@
         <!--AnswerQuestion-->
         <scene sceneID="E8s-2Y-PFa">
             <objects>
-                <viewController storyboardIdentifier="Jon's test" title="AnswerQuestion" id="ID0-9i-YHk" sceneMemberID="viewController">
+                <viewController title="AnswerQuestion" id="ID0-9i-YHk" customClass="AnswerQuestion" customModule="Stereonography" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Ra-ri-1df"/>
                         <viewControllerLayoutGuide type="bottom" id="uAt-6O-Suu"/>
@@ -170,8 +170,30 @@
                     <view key="view" contentMode="scaleToFill" id="Gzd-os-HFt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How old you is?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZz-Uv-cKa">
+                                <rect key="frame" x="201" y="77" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7eh-Tu-Wip">
+                                <rect key="frame" x="213" y="301" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nN-5t-iaE">
+                                <rect key="frame" x="238" y="365" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="AnswerHere" destination="7eh-Tu-Wip" id="7vz-bf-IAh"/>
+                        <outlet property="Question" destination="nZz-Uv-cKa" id="JVz-Yu-wvO"/>
+                        <segue destination="Fru-tH-5Dc" kind="show" identifier="heresyourtext" id="jNN-3d-tjs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJp-xp-fPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

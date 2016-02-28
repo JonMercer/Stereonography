@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         performSegueWithIdentifier("picturenow", sender: self)
             
             let defaults = NSUserDefaults.standardUserDefaults()
-            defaults.setObject(linkstring, forKey: "messageData")
+            defaults.setObject(linkstring, forKey: "MessageData")
 
             
             

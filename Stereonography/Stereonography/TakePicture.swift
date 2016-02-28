@@ -6,13 +6,15 @@
 //  Copyright © 2016 Purple Octopus. All rights reserved.
 //
 
+
+import Foundation
+
 import UIKit
 
 import Foundation
 
 class TakePicture: UIViewController {
     
-        
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,4 +28,3 @@ class TakePicture: UIViewController {
     
     
 }
-

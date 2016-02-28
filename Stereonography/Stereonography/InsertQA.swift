@@ -21,18 +21,27 @@ class InsertQA: UIViewController {
     
     @IBAction func SubmitQA(sender: UIButton) {
         
+        
+        
+        let defaultQ = NSUserDefaults.standardUserDefaults()
+        defaultQ.setObject("YourQuestion", forKey: "MadeQuestion")
+        
+        let defaultA = NSUserDefaults.standardUserDefaults()
+        defaultA.setObject("YourAnswer", forKey: "MadeAnswer")
+
         performSegueWithIdentifier("loadingscreen", sender: self)
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setObject("YourQuestion", forKey: "madeQuestion")
         
-        // a function giving omar this question and answer would go here
+        
+        // a function giving omar this question and answer would go here with "MadeQuestion" "MadeAnswer" "MessageData"
+        // Send result to server copy link
         
     }
     
 override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+
 }
 
 override func didReceiveMemoryWarning() {

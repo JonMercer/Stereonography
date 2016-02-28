@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9464A22C1C832B9300E94C6B /* TakePicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9464A22B1C832B9300E94C6B /* TakePicture.swift */; };
+		9464A22E1C834DBA00E94C6B /* AnswerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9464A22D1C834DBA00E94C6B /* AnswerQuestion.swift */; };
 		948A21EF1C83258A0023CA3D /* InsertQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A21EE1C83258A0023CA3D /* InsertQA.swift */; };
 		C857682A1C83470500C65827 /* UIImage+Test2.m in Sources */ = {isa = PBXBuildFile; fileRef = C85768261C83470500C65827 /* UIImage+Test2.m */; };
 		C857682B1C83470500C65827 /* StegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85768281C83470500C65827 /* StegViewController.m */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		9464A22B1C832B9300E94C6B /* TakePicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePicture.swift; sourceTree = "<group>"; };
+		9464A22D1C834DBA00E94C6B /* AnswerQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerQuestion.swift; sourceTree = "<group>"; };
 		948A21EE1C83258A0023CA3D /* InsertQA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertQA.swift; sourceTree = "<group>"; };
 		C85768261C83470500C65827 /* UIImage+Test2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Test2.m"; sourceTree = "<group>"; };
 		C85768271C83470500C65827 /* UIImage+Test2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Test2.h"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				C8E9B2791C82851000C798BF /* ViewController.swift */,
 				9464A22B1C832B9300E94C6B /* TakePicture.swift */,
 				C8E9B27B1C82851000C798BF /* Main.storyboard */,
+				9464A22D1C834DBA00E94C6B /* AnswerQuestion.swift */,
 				C8E9B27E1C82851000C798BF /* Assets.xcassets */,
 				C8E9B2801C82851000C798BF /* LaunchScreen.storyboard */,
 				C8E89A051C82D25900DEC80D /* IMG_1086.jpg */,
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9464A22E1C834DBA00E94C6B /* AnswerQuestion.swift in Sources */,
 				C857682A1C83470500C65827 /* UIImage+Test2.m in Sources */,
 				948A21EF1C83258A0023CA3D /* InsertQA.swift in Sources */,
 				C8E9B27A1C82851000C798BF /* ViewController.swift in Sources */,
