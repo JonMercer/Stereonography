@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZJl-Af-DCu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZJl-Af-DCu">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--JonsTest-->
@@ -42,15 +42,14 @@
                                 <rect key="frame" x="172" y="296" width="77" height="30"/>
                                 <state key="normal" title="Take Photo"/>
                                 <connections>
-                                    <action selector="presentImagePicker:" destination="tau-FU-8eZ" eventType="touchUpInside" id="dKQ-j6-prQ"/>
-                                    <action selector="takePhoto:" destination="tau-FU-8eZ" eventType="touchUpInside" id="1Ea-nU-KCZ"/>
+                                    <action selector="TakePicture:" destination="tau-FU-8eZ" eventType="touchUpInside" id="oSe-mk-J08"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="lcu-nA-c0A" id="mhQ-Bv-VUn"/>
+                        <outlet property="ImageView" destination="lcu-nA-c0A" id="hN8-pa-OZU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXb-kh-WIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -189,11 +188,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg_home" translatesAutoresizingMaskIntoConstraints="NO" id="5k3-3H-75O">
-                                <rect key="frame" x="169" y="172" width="263" height="232.5"/>
+                                <rect key="frame" x="169" y="172" width="263" height="233"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tap to Insert Link or Message" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQm-J7-f4O">
                                 <rect key="frame" x="95" y="241" width="411" height="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>

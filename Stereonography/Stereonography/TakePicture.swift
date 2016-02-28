@@ -10,20 +10,38 @@ import UIKit
 
 import Foundation
 
-class TakePicture: UIViewController {
+class TakePicture: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
+    @IBOutlet var ImageView: UIImageView!
+    
+    var imagePicker: UIImagePickerController!
+    
+    @IBAction func TakePicture(sender: UIButton) {
+        imagePicker =  UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .Camera
         
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      print("UIViewcontroller did load")
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        ImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        saveImage();
+    }
+    
+    func saveImage() {
+        let imagedefaults = NSUserDefaults.standardUserDefaults()
+        imagedefaults.setObject("info", forKey: "imagestorage")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-      
-            print("memory warning")
         // Dispose of any resources that can be recreated.
     }
     
