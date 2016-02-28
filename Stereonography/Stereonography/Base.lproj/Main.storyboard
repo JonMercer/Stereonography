@@ -44,7 +44,7 @@
         <!--InsertQuestionANswer-->
         <scene sceneID="A2T-jR-yNf">
             <objects>
-                <viewController title="InsertQuestionANswer" id="bWU-Pe-Hbj" sceneMemberID="viewController">
+                <viewController title="InsertQuestionANswer" id="bWU-Pe-Hbj" customClass="InsertQA" customModule="Stereonography" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yx4-w0-xtM"/>
                         <viewControllerLayoutGuide type="bottom" id="ehM-tQ-Z50"/>
@@ -52,8 +52,37 @@
                     <view key="view" contentMode="scaleToFill" id="Hle-63-58k">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Insert a Question and Answer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="di4-kf-Nso">
+                                <rect key="frame" x="195" y="38" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Insert Answer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycb-4Y-xMx">
+                                <rect key="frame" x="195" y="378" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Insert Question" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTJ-89-eFi">
+                                <rect key="frame" x="195" y="210" width="211" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opf-fz-JvH">
+                                <rect key="frame" x="276" y="492" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="SubmitQA:" destination="bWU-Pe-Hbj" eventType="touchUpInside" id="kW1-vN-BDg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="YourAnswer" destination="ycb-4Y-xMx" id="pJg-iV-PBi"/>
+                        <outlet property="YourQuestion" destination="WTJ-89-eFi" id="2Hk-p1-b6T"/>
+                        <segue destination="kOc-bX-giN" kind="show" identifier="loadingscreen" id="gZa-aS-uaE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6R-Q7-Taw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
