@@ -16,11 +16,14 @@ class TakePicture: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      print("UIViewcontroller did load")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+      
+            print("memory warning")
         // Dispose of any resources that can be recreated.
     }
     

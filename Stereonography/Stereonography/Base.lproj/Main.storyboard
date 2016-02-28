@@ -51,7 +51,6 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="lcu-nA-c0A" id="mhQ-Bv-VUn"/>
-                        <outlet property="imageViewer" destination="lcu-nA-c0A" id="Szm-Ef-ZPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXb-kh-WIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -189,34 +188,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Link or Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJg-OC-Jgd">
-                                <rect key="frame" x="213.5" y="79" width="173.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQm-J7-f4O">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bg_home" translatesAutoresizingMaskIntoConstraints="NO" id="5k3-3H-75O">
+                                <rect key="frame" x="169" y="172" width="263" height="232.5"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tap to Insert Link or Message" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQm-J7-f4O">
                                 <rect key="frame" x="95" y="241" width="411" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVC-ze-FII">
-                                <rect key="frame" x="276" y="414" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <rect key="frame" x="203" y="413" width="122" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="Submit:" destination="ZJl-Af-DCu" eventType="touchUpInside" id="NrK-2U-LIS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="VVC-ze-FII" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" id="23I-qI-tN5"/>
-                            <constraint firstItem="wQm-J7-f4O" firstAttribute="width" secondItem="qa3-dX-jox" secondAttribute="width" constant="-200" id="44s-wT-ISq"/>
-                            <constraint firstItem="nJg-OC-Jgd" firstAttribute="top" secondItem="DE3-e3-qlv" secondAttribute="bottom" constant="59" id="88B-z6-e4S"/>
+                            <constraint firstItem="wQm-J7-f4O" firstAttribute="width" secondItem="qa3-dX-jox" secondAttribute="width" constant="-100" id="44s-wT-ISq"/>
                             <constraint firstItem="Y3p-Ch-MIW" firstAttribute="top" secondItem="VVC-ze-FII" secondAttribute="bottom" constant="155" id="Nnq-qZ-R9b"/>
+                            <constraint firstItem="5k3-3H-75O" firstAttribute="centerY" secondItem="qa3-dX-jox" secondAttribute="centerY" id="VZb-AD-Gyf"/>
                             <constraint firstItem="wQm-J7-f4O" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" id="Wei-nu-O4N"/>
+                            <constraint firstItem="5k3-3H-75O" firstAttribute="width" secondItem="qa3-dX-jox" secondAttribute="width" id="Ybv-HS-LYL"/>
                             <constraint firstItem="wQm-J7-f4O" firstAttribute="centerY" secondItem="qa3-dX-jox" secondAttribute="centerY" id="e99-Wt-2wD"/>
-                            <constraint firstItem="nJg-OC-Jgd" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" id="ekJ-b1-Mbe"/>
+                            <constraint firstItem="5k3-3H-75O" firstAttribute="centerX" secondItem="qa3-dX-jox" secondAttribute="centerX" id="gTm-jD-qAA"/>
+                            <constraint firstItem="5k3-3H-75O" firstAttribute="height" secondItem="qa3-dX-jox" secondAttribute="height" id="qqX-6g-6Rh"/>
                         </constraints>
                     </view>
                     <connections>
@@ -230,4 +238,7 @@
             <point key="canvasLocation" x="1007" y="322"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_home" width="750" height="1334"/>
+    </resources>
 </document>
