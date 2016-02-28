@@ -60,6 +60,17 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-
+    //This is for the keyboard to GO AWAYY !! when user clicks anywhere on the view
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    //This is for the keyboard to GO AWAYY !! when user clicks "Return" key  on the keyboard
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
 
