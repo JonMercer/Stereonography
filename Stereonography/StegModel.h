@@ -8,15 +8,22 @@
 
 //#import <Cocoa/Cocoa.h>
 
+/*
+ *
+ *This file was created by Omar
+ *
+ */
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 @interface StegModel : NSObject
 
--(BOOL) encryptWithQuestion:(NSString*)question  andAnswer:(NSString*)answer andMessage:(NSString*)message andImageKey:(NSString *)imageKey;
+-(NSString*) encryptWithQuestion:(NSString*)question  andAnswer:(NSString*)answer andMessage:(NSString*)message andImageKey:(NSString *)imageKey;
 
--(NSString*) decryptImageQuestion: (NSString*)imageKey;
--(NSString*) attemptToDecryptImageMessageWithAnswerKey: (NSString*)answer;
+-(NSString*) decryptImageQuestion: (UIImage*)image;
+-(NSString*) attemptToDecryptImageMessageWithAnswerKey: (NSString*)answer andImgKey:(NSString*)imageKey;
 -(UIImage*) jpegFromBitmap: (NSString*)imageKey;
+
 
 @end
